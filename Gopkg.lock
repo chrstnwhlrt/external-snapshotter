@@ -62,6 +62,7 @@
     "ptypes",
     "ptypes/any",
     "ptypes/duration",
+    "ptypes/timestamp",
     "ptypes/wrappers",
   ]
   pruneopts = "NUT"
@@ -138,6 +139,28 @@
   pruneopts = "NUT"
   revision = "5421d9f3c37be3b95b241b44a094a3db11bee789"
   version = "v2.0.0"
+
+[[projects]]
+  digest = "1:403ce070ea1d3ee543574c811e10280f09f88d08a3e31e66113e94c290d56601"
+  name = "github.com/kubernetes-csi/external-snapshotter"
+  packages = [
+    "pkg/apis/volumesnapshot/v1alpha1",
+    "pkg/client/clientset/versioned",
+    "pkg/client/clientset/versioned/fake",
+    "pkg/client/clientset/versioned/scheme",
+    "pkg/client/clientset/versioned/typed/volumesnapshot/v1alpha1",
+    "pkg/client/clientset/versioned/typed/volumesnapshot/v1alpha1/fake",
+    "pkg/client/informers/externalversions",
+    "pkg/client/informers/externalversions/internalinterfaces",
+    "pkg/client/informers/externalversions/volumesnapshot",
+    "pkg/client/informers/externalversions/volumesnapshot/v1alpha1",
+    "pkg/client/listers/volumesnapshot/v1alpha1",
+    "pkg/controller",
+    "pkg/snapshotter",
+  ]
+  pruneopts = "NUT"
+  revision = "34fa9aad47eef93ca8281c2a029f031852cfefa5"
+  version = "v1.2.1"
 
 [[projects]]
   digest = "1:2f42fa12d6911c7b7659738758631bec870b7e9b4c6be5444f963cdcfccc191f"
@@ -757,6 +780,19 @@
     "github.com/kubernetes-csi/csi-lib-utils/leaderelection",
     "github.com/kubernetes-csi/csi-lib-utils/rpc",
     "github.com/kubernetes-csi/csi-test/driver",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/apis/volumesnapshot/v1alpha1",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/clientset/versioned",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/clientset/versioned/fake",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/clientset/versioned/scheme",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/clientset/versioned/typed/volumesnapshot/v1alpha1",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/clientset/versioned/typed/volumesnapshot/v1alpha1/fake",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/informers/externalversions",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/informers/externalversions/internalinterfaces",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/informers/externalversions/volumesnapshot",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/informers/externalversions/volumesnapshot/v1alpha1",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/client/listers/volumesnapshot/v1alpha1",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/controller",
+    "github.com/kubernetes-csi/external-snapshotter/pkg/snapshotter",
     "google.golang.org/grpc",
     "google.golang.org/grpc/codes",
     "google.golang.org/grpc/status",

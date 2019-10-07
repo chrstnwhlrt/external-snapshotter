@@ -1,2 +1,3 @@
 # Compiled binaries and deployment files
 /bin/
+vendor

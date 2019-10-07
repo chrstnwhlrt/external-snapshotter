@@ -17,3 +17,5 @@
 CMDS=csi-snapshotter
 all: build
 include release-tools/build.make
+
+REGISTRY_NAME=christianwohlert
